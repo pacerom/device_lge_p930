@@ -1,17 +1,17 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/pace/config/gsm.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/pace/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/p930/p930.mk)
 
-PRODUCT_NAME := cm_p930
+PRODUCT_NAME := pace_p930
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := OptimusLTE
